@@ -67,7 +67,7 @@ async.auto({
 		});
 	},
 	clients: function (callback) {
-		async.parallel({
+		return async.parallel({
 			/* Load all clients: */
 			redis: require("./clients/redis-client")
 		}, function (err, res) {
@@ -80,7 +80,7 @@ async.auto({
 		});
 	},
 	librairies: ["clients", function (_, callback) {
-		async.parallel({
+		return async.parallel({
 			/* Load all libraries: */
 			lib: function (callback) {
 			    return require("./lib/lib1.js")(app, callback);

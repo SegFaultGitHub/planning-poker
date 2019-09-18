@@ -2,12 +2,7 @@
 
 module.exports = {
 	server: {
-		port: 3005,
-		/* HTTPS configuration */
-		// https: {
-		// 	key: "./certs/server.key",
-		// 	cert: "./certs/server.cert"
-		// }
+		port: 3005
 	},
 	/* Redis configuration */
 	// redis: {

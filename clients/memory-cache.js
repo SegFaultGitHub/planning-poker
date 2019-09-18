@@ -74,6 +74,9 @@ module.exports = function (callback) {
 				return regexp.test(key);
 			});
 			return callback(null, keys);
+		},
+		expire: function(key, ttl, callback) {
+			return callback();
 		}
 	}
 

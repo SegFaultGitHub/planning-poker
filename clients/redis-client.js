@@ -33,4 +33,4 @@ if (config.redis) {
 			}
 		});
 	}
-}
+};
